@@ -1,0 +1,83 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16%;
+
+}
+
+h2{
+    font-size: 28px;
+}
+
+
+.card{
+    border: solid 2px black;
+    height: 400px;
+    width: 800px;
+    background-color: rgb(219, 247, 247);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.Card-inf{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.inputCard{
+    padding: 10px;
+    width: 80%;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+.btnagregar{
+    padding: 10px;
+    background-color: rgb(114, 114, 173);
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    color: beige;
+    cursor: pointer;
+    
+}
+
+.Card-tareas{
+    display: flex;
+    gap: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Card-nombreTarea{
+    display: flex;
+    gap: 30px;
+}
+.TareaID p{
+  text-align: center;
+}
+
+.TareaID{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.TareaID ul li{
+    align-items: center;
+}
+
+
+
+.listasid{
+    list-style: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}

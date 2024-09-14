@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/estilos/estilo.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/estilos/estilo.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="card">
+        <h2>Todo List</h2>
+
+        <div class="Card-inf">
+          <input id="inputCards" class="inputCard" type="text" />
+          <button id="btnagregar" class="btnagregar">Agregar</button>
+        </div>
+        <div class="Card-tareas">
+          <div class="Card-Cont">
+            <p>Total : <span id="total"></span></p>
+            <p>Realizadas : <span id="realizadas"></span></p>
+          </div>
+          <div class="Card-nombreTarea">
+            <div class="TareaID">
+              <p>ID</p>
+              <ul id="listID" ></ul>
+            </div>
+            <div class="nombreTarea">
+                <p>Tarea</p>
+                <ul id="listTarea" class="listTarea"></ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./Assets/Javascript/script.js"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/920379bed9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
