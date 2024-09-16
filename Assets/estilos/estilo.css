@@ -54,6 +54,9 @@ h2 {
 .titulo{
  padding-left: 38px;
 }
+.titulo2{
+  padding-left: 22px;
+}
 
 .Card-ID {
   display: flex;
@@ -93,7 +96,12 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 47px;
   
 }
 
+
+.inputcheck{
+  margin-left: 40px;
+}
 
