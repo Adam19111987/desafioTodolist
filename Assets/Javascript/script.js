@@ -27,7 +27,7 @@ function renderizarTareas(labores, elemenID, elementarea,elementchech) {
   let htmlchek = "";
   for (labor of labores) {
     htmlID += `<li class ="listaid">${labor.id}</li> `;
-    htmltarea += `<li class ="listascard">${labor.tarea}</li>`;
+    htmltarea += `<li class ="listaid">${labor.tarea}</li>`;
     htmlchek += ` <input type="checkbox">`
   }
   elemento.innerHTML = htmlID;

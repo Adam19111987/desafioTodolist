@@ -11,7 +11,7 @@ h2 {
 
 .card {
   border: solid 2px black;
-  height: 400px;
+  min-width:  400px;
   width: 800px;
   background-color: rgb(219, 247, 247);
   padding: 20px;
@@ -49,7 +49,10 @@ h2 {
 .Cards-listado {
   display: flex;
   align-items: center;
-  gap: 10px;
+
+}
+.titulo{
+ padding-left: 38px;
 }
 
 .Card-ID {
@@ -66,16 +69,13 @@ h2 {
 
 .listascard {
   display: flex;
-  gap: ;
+ 
   list-style: none;
   margin-right: 39px;
 }
 
-.listasid {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 0;
+.listaid {
+  list-style: none;
 }
 
 .listascard {
@@ -84,11 +84,16 @@ h2 {
   gap: 20px;
 }
 
-.tarea-texto{
-    margin-left: 20px;
+.inputcheck{
+  display: flex;
+  flex-direction: column;
 }
 
-.tareacheckbox {
-    display: flex;
-    gap: 20px;
+.contenedorlistadocheq{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
+
+
