@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tareas</title>
+  <style>
+    .listasid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 0;
+    }
+
+    .tarea-texto {
+      flex: 1;
+    }
+
+    .tarea-checkbox {
+      flex-basis: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .checkbox-tarea {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="card">
+      <h2>Lista de tareas pendientes</h2>
+
+      <div class="Card-inf">
+        <input id="inputCards" class="inputCard" type="text" placeholder="Escribe una tarea..." />
+        <button id="btnagregar" class="btnagregar">Agregar</button>
+      </div>
+
+      <div class="Card-tareas">
+        <div class="Card-Cont">
+          <p>Total: <span id="total">0</span></p>
+          <p>Realizadas: <span id="realizadas">0</span></p>
+        </div>
+
+        <div class="Cards-listado">
+          <div class="Card-ID">
+            <h4 class="tituloid">ID</h4>
+            <ul id="listID"></ul>
+          </div>
+          <div class="Card-Tareas">
+            <h4>Tarea</h4>
+            <ul id="listTarea" class="listTarea"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const inputTarea = document.querySelector("#inputCards");
+    const btnTarea = document.querySelector("#btnagregar");
+    const totalTareas = document.querySelector("#total");
+    const realizadasTareas = document.querySelector("#realizadas");
+
+    const Tareas = [];
+
+    btnTarea.addEventListener("click", () => {
+      const nuevaTarea = inputTarea.value;
+      if (nuevaTarea.trim() === "") return; // Evitar agregar tareas vacías
+      
+      const ident = Math.floor(Math.random() * 90) + 10;
+      Tareas.push({ id: ident, tarea: nuevaTarea });
+      inputTarea.value = "";
+      
+      renderizarTareas(Tareas, "#listID", "#listTarea");
+      totalTareas.innerHTML = `${Tareas.length}`;
+    });
+
+    function renderizarTareas(labores, elemenID, elementarea) {
+      let elemento = document.querySelector(elemenID);
+      let elemenTarea = document.querySelector(elementarea);
+
+      let htmlID = "";
+      let htmltarea = "";
+
+      for (let labor of labores) {
+        htmlID += `<li class="listasid">${labor.id}</li>`;
+        htmltarea += `<li class="listasid">
+                        <div class="tarea-texto">${labor.tarea}</div>
+                        <div class="tarea-checkbox">
+                          <input type="checkbox" class="checkbox-tarea">
+                        </div>
+                      </li>`;
+      }
+
+      elemento.innerHTML = htmlID;
+      elemenTarea.innerHTML = htmltarea;
+    }
+  </script>
+</body>
+</html>
