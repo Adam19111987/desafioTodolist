@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Assets/estilos/estilo.css" />
+    <script
+    src="https://kit.fontawesome.com/920379bed9.js"
+    crossorigin="anonymous"
+  ></script>
     <title>Document</title>
   </head>
   <body>
@@ -17,27 +21,36 @@
         </div>
         <div class="Card-tareas">
           <div class="Card-Cont">
-            <p>Total : <span id="total"></span></p>
-            <p>Realizadas : <span id="realizadas"></span></p>
+            <p>Total : <span id="total">0</span></p>
+            <p>Realizadas : <span id="realizadas">0</span></p>
           </div>
-          <div class="Card-nombreTarea">
-            <div class="TareaID">
-              <p>ID</p>
-              <ul id="listID" ></ul>
+          <div class="Cards-listado">
+          <div class="Card-ID">
+            <h4 class="titulo">ID</h4>
+            <ul id="listID"></ul> 
+          </div>
+            <div class="Card-Tareas">
+            <h4>Tarea</h4>
+            <div class="contenedorlistadocheq">
+            <ul id="listTarea" class="listTarea"></ul>
+            <div id="inputcheck" class="inputcheck">
+              
             </div>
-            <div class="nombreTarea">
-                <p>Tarea</p>
-                <ul id="listTarea" class="listTarea"></ul>
-              </div>
-          </div>
+             </div>
+            
+        
+             
+             </div>
+            
+                       
+             </div>
+         </div>
+         
         </div>
       </div>
     </div>
 
     <script src="./Assets/Javascript/script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/920379bed9.js"
-      crossorigin="anonymous"
-    ></script>
+   
   </body>
 </html>
