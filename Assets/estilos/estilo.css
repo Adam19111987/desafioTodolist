@@ -19,7 +19,7 @@ h2 {
   flex-direction: column;
 }
 .Card-inf {
-  margin-top: 40px;
+  padding: 13px;
   display: flex;
   gap: 20px;
 }
@@ -43,26 +43,21 @@ h2 {
 
 .Card-tareas {
   display: flex;
-  column-gap: 20px;
-  justify-content: space-evenly;
-}
+ justify-content: space-around;
+ }
+
 .Cards-listado {
   display: flex;
-  align-items: center;
-
 }
+
 .titulo{
  padding-left: 38px;
-}
-.titulo2{
-  padding-left: 22px;
 }
 
 .Card-ID {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+ }
 
 .Card-Tareas {
   display: flex;
@@ -86,10 +81,24 @@ h2 {
   align-items: center;
   gap: 20px;
 }
+.listatarea{
+  list-style: none;
+}
 
 .inputcheck{
   display: flex;
   flex-direction: column;
+}
+.bntcheks{
+  display: flex;
+  column-gap: 20px;
+}
+
+.activarCheck{
+  cursor: pointer;
+}
+.btnX{
+  cursor: pointer;
 }
 
 .contenedorlistadocheq{
@@ -104,4 +113,3 @@ h2 {
 .inputcheck{
   margin-left: 40px;
 }
-
